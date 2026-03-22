@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <section class="about">
+<section class="about">
 
     <h3 class="about-title">Sobre nós</h3>
 
@@ -60,40 +60,71 @@
             <h2>Tecnologia que faz suas ideias ganharem asas.</h2>
 
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                A Raven atua na área de  desenvolvimento de software, criando aplicações sob medida 
+                para atender às necessidades de empresas de pequeno e médio porte, com foco em eficiência,
+                inovação e qualidade.
             </p>
         </div>
 
         <div class="tech-carousel">
-    <div class="tech-track">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-    <img src="https://cdn.simpleicons.org/figma/000000">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+            <div class="tech-track">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                <img src="https://cdn.simpleicons.org/figma/000000">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
 
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-    <img src="https://cdn.simpleicons.org/figma/000000">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                <img src="https://cdn.simpleicons.org/figma/000000">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
 
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-    <img src="https://cdn.simpleicons.org/figma/000000">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                <img src="https://cdn.simpleicons.org/figma/000000">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+            </div>
+        </div>
     </div>
-</div>
+
+</section>
+
+<section class="devs">
+     <h3 class="Dev-title">Nossos Desenvolvedores</h3>
+
+     <div class="dev-box">
+
+        <div class="about-right">
+            <h2>Aqueles que fazem a Raven acontecer</h2>
 
         </div>
 
-    </div>
+        <div class="dev-carousel-wrapper">
+            <button class="prev-dev">‹</button>
+
+            <div class="dev-carousel">
+                @foreach($devs as $d)
+                <div class="dev-card">
+                    <figure class="figura">
+                        <img class="image" src="{{ asset($d->foto) }}">
+                        <figcaption class="figura-texto">
+                            <h3>{{ $d->nome }}</h3>
+                            <div class="linha-dev"></div>
+                            <p>{{ $d->funcao }}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                @endforeach
+            </div>
+
+            <button class="next-dev">›</button>
+        </div>
+     </div>
 
 </section>
 
@@ -130,5 +161,6 @@
     </div>
 
 </section>
+    <script src="{{ url('js/carousel.js') }}"></script>
 </body>
-</html>
+</html> 
