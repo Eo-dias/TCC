@@ -192,7 +192,7 @@ body {
     background: #e9e7f2;
     width: 100%;
     padding: 80px 10%;
-    border-radius: 40px 40px 0 0;
+    border-radius: 40px 40px ;
     position: relative;
     box-shadow: 0 -20px 60px rgba(0,0,0,0.3);
     transform: translateY(-170px);
@@ -282,6 +282,180 @@ body {
     }
 }
 
+.devs{
+    background: #020024;
+    padding: 120px 0 12px;
+    position: relative;
+}
+
+.Dev-title{
+        text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    background: linear-gradient(
+        90deg,
+        #144999 12%,
+        #a8d4ee 40%,
+        #9aa6ff 67%,
+        #7a88ff 75%,
+        #5b6cff 100%
+    );
+
+    background-size: 200% auto;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    position: relative;
+    z-index: 5;
+
+    transform: translateY(-195px);
+}
+
+
+.dev-box{
+    background: #e9e7f2;
+    width: 100%;
+    padding: 80px 10%;
+    border-radius: 40px 40px;
+    position: relative;
+    box-shadow: 0 -20px 60px rgba(0,0,0,0.3);
+    transform: translateY(-170px);
+    overflow: visible;
+}
+
+.figura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 5px;
+    background-color: #1a2b5c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.figura:hover {
+    transform: translateY(-8px);
+    background-color: rgb(44, 69, 139);
+}
+
+.figura-texto {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.figura-texto h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.linha-dev{
+    background-color: rgb(255, 255, 255);
+    width: 30vh;
+    height: 0.1vh;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.figura-texto p {
+    color: #cfd8ff;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.dev-carousel-wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.dev-carousel {
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    overflow-x: auto; 
+    scroll-behavior: smooth;
+    max-width: 1125px;
+}
+
+.dev-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.dev-card {
+    min-width: 250px;
+}
+
+.prev-dev {
+    background: #144999;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    left: 20px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.prev-dev:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.next-dev:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.next-dev {
+    background: #144999;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    right: 20px;
+}
+
 .diferenciais {
     background: #020024;
     padding: 50px 5% 100px;
@@ -346,4 +520,53 @@ body {
     box-shadow: 
         0 0 25px rgba(120, 140, 255, 0.5),
         inset 0 0 15px rgba(120, 140, 255, 0.2);
+}
+.contato{
+    background: #020024;
+    padding: 120px 0 12px;
+    position: relative;
+}
+
+.contato-box{
+    background: 
+        radial-gradient(circle at 20%, rgba(88, 158, 250, 0.18), transparent 60%),
+        radial-gradient(circle at 75%, rgba(88, 158, 250, 0.28), transparent 55%),
+        radial-gradient(circle at 99%, rgba(120, 180, 255, 0.25), transparent 60%),
+        radial-gradient(circle at 80%, rgba(60, 90, 200, 0.22), transparent 70%),
+        linear-gradient(135deg, #020024 0%, #06143a 40%, #0b2a66 100%);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding: 80px 10%;
+    border-radius: 40px 40px 0 0;
+    position: relative; 
+    margin-top: 100px;
+    box-shadow: 0 -20px 60px rgba(0,0,0,0.3);
+    transform: translateY(-170px);
+    overflow: visible;
+
+}
+.contato-left {
+    position: absolute;
+    left: 200px;
+    top: 20px;
+}
+
+.contato-left img {
+    width: 200px;
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.2));
+}
+.contato-right {
+    margin-left: 520px;
+    text-align: center;
+}
+
+.contato-right h2 {     
+    font-size: 32px;
+    color: #a8d4ee;
+    margin-bottom: 20px;
+}
+
+.contato-right p {
+    color: #555;
+    line-height: 1.7;
 }
