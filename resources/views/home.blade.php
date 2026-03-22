@@ -96,5 +96,39 @@
     </div>
 
 </section>
+
+<section class="diferenciais">
+
+    <h2 class="dif-title">Nossos diferenciais</h2>
+
+    <div class="dif-container">
+
+        <div class="dif-card">
+            <div class="icon">💻</div>
+            <h3>Aplicações digitais</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+        <div class="dif-card">
+            <div class="icon">⚙️</div>
+            <h3>Desenvolvimento web</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+        <div class="dif-card">
+            <div class="icon">🖥️</div>
+            <h3>Desenvolvimento de sistemas</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+        <div class="dif-card">
+            <div class="icon">⚙️</div>
+            <h3>Desenvolvimento web</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+    </div>
+
+</section>
 </body>
 </html>

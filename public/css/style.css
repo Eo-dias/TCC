@@ -156,7 +156,7 @@ body {
 
 .about {
     background: #020024;
-    padding: 120px 0 120px;
+    padding: 120px 0 12px;
     position: relative;
 }
 
@@ -196,6 +196,7 @@ body {
     position: relative;
     box-shadow: 0 -20px 60px rgba(0,0,0,0.3);
     transform: translateY(-170px);
+    overflow: visible;
 }
 
 .about-left {
@@ -279,4 +280,70 @@ body {
     to {
         transform: translateX(-33.333%);
     }
+}
+
+.diferenciais {
+    background: #020024;
+    padding: 50px 5% 100px;
+    margin-top: -140px;
+    text-align: center;
+}
+
+.dif-title {
+    color: #8ea2ff;
+    font-size: 26px;
+    margin-bottom: 60px;
+    text-align: left;
+    position: relative;
+    z-index: 10;
+    margin-left: 90px;
+}
+
+.dif-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.dif-card {
+    width: 240px;
+    padding: 25px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(120, 140, 255, 0.5);
+
+    box-shadow: 
+        0 0 15px rgba(120, 140, 255, 0.2),
+        inset 0 0 10px rgba(120, 140, 255, 0.1);
+
+    text-align: left;
+    transition: 0.3s;
+}
+
+.dif-card .icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.dif-card h3 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.dif-card p {
+    color: #cfd8ff;
+    font-size: 13px;
+}
+
+.dif-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 
+        0 0 25px rgba(120, 140, 255, 0.5),
+        inset 0 0 15px rgba(120, 140, 255, 0.2);
 }
