@@ -161,7 +161,6 @@
     </div>
 
 </section>
-
     <script src="{{ url('js/carousel.js') }}"></script>
 </body>
 </html> 
