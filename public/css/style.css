@@ -449,8 +449,6 @@ body {
     display: none;
 }
 
-/* ========== NOSSO PROJETO ========== */
-
 .diferenciais {
     background: #020024;
     padding: 20px 5% 100px;
@@ -532,8 +530,6 @@ body {
         inset 0 0 20px rgba(120, 140, 255, 0.3);
     border: 1px solid rgba(120, 140, 255, 0.8);
 }
-
-/* ========== FORMULÁRIO ========== */
 
 .secao-formulario {
     height: 600px;
@@ -623,8 +619,6 @@ body {
     gap: 40px;
     padding: 50px;
 }
-
-/* ========== FOOTER ========== */
 
 .footer-home {
     width: 100%;
