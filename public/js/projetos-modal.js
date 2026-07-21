@@ -1,35 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var carousel = document.querySelector(".dev-carousel");
-
-    if (carousel) {
-        var scrollAmount = 280;
-        var intervaloAutomatico = 3000;
-
-        setInterval(function () {
-            var maxScroll = carousel.scrollWidth - carousel.clientWidth;
-
-            if (carousel.scrollLeft >= maxScroll - 10) {
-                carousel.scrollTo({
-                    left: 0,
-                    behavior: "smooth"
-                });
-            } else {
-                carousel.scrollBy({
-                    left: scrollAmount,
-                    behavior: "smooth"
-                });
-            }
-        }, intervaloAutomatico);
-    }
-
     var modal = document.getElementById("projectModal");
     var modalImage = document.getElementById("projectModalImage");
     var modalTitle = document.getElementById("projectModalTitle");
     var modalDescription = document.getElementById("projectModalDescription");
     var closeButton = document.getElementById("projectModalClose");
-    var projectsContainer = document.querySelector(".dif-container");
+    var triggers = document.querySelectorAll(".project-trigger");
 
-    if (!modal || !modalImage || !modalTitle || !modalDescription || !closeButton || !projectsContainer) {
+    if (!modal || !modalImage || !modalTitle || !modalDescription || !closeButton) {
         return;
     }
 
@@ -49,19 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.remove("modal-open");
     };
 
-    projectsContainer.addEventListener("click", function (event) {
-        var target = event.target;
-        var trigger = target && target.closest ? target.closest(".project-trigger") : null;
-
-        if (!trigger) {
-            return;
-        }
-
-        openModal(
-            trigger.getAttribute("data-image") || "",
-            trigger.getAttribute("data-title") || "",
-            trigger.getAttribute("data-description") || ""
-        );
+    triggers.forEach(function (trigger) {
+        trigger.addEventListener("click", function () {
+            openModal(trigger.dataset.image || "", trigger.dataset.title || "", trigger.dataset.description || "");
+        });
     });
 
     closeButton.addEventListener("click", closeModal);
