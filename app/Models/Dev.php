@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dev extends Model
 {
-    protected $table = 'dev';
     use HasFactory;
+
+    protected $table = 'dev';
+
+    protected $fillable = [
+        'nome',
+        'funcao',
+        'foto',
+    ];
 }

@@ -16,9 +16,9 @@ body {
     left: 0;
     padding: 7px 0;
     z-index: 1000;
-    background: rgba(2, 0, 36, 0.85);
+    background: rgba(12, 20, 78, 0.88);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 15px rgba(8, 16, 62, 0.38);
 }
 
 .container {
@@ -672,7 +672,8 @@ body.modal-open footer {
 
 .footer-home {
     width: 100%;
-    color: #fefffe;
+    color: #f7f9ff;
+    background: #101b5a;
 }
 
 .div-footer1 {

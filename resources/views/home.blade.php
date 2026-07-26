@@ -14,16 +14,16 @@
               <img src="{{ asset('img/logo.png') }}" alt="Logo Raven">
            </div>
             <ul class="nav-links">
-                <li><a href="#">Sessao1</a></li>
-                <li><a href="#">Sessao2</a></li>
-                <li><a href="#">Sessao3</a></li>
-                <li><a href="#">Sessao4</a></li>
-                <li><a href="#">Sessao5</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre Nos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="hero-container">
             <div class="hero-text">
                 <h1>Tecnologia que faz suas ideias ganharem asas.</h1>
@@ -39,7 +39,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="sobre">
         <h3 class="about-title">Sobre nos</h3>
         <div class="about-box">
             <div class="about-left">
@@ -80,7 +80,7 @@
         </div>
     </section>
 
-    <section class="diferenciais">
+    <section class="diferenciais" id="projetos">
         <h2 class="dif-title">Nossos projetos</h2>
         <div class="dif-container">
             <div class="dif-card">
@@ -149,7 +149,7 @@
         </div>
     </section>
 
-    <section class="devs">
+    <section class="devs" id="equipe">
         <h3 class="Dev-title">Nossos Desenvolvedores</h3>
         <div class="dev-box">
             <div class="about-right">
@@ -174,7 +174,7 @@
         </div>
     </section>
 
-    <section class="secao-formulario">
+    <section class="secao-formulario" id="contato">
         <div class="div-textForm">
             <div>
                 <h1 class="title-textForm">Nos Contate</h1>
