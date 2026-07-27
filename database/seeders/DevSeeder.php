@@ -11,69 +11,69 @@ class DevSeeder extends Seeder
     {
         $devs = [
             [
-                'nome' => 'Aldere',
-                'funcao' => 'Desenvolvedor Full Stack',
+                'nome' => 'Geovanny',
+                'funcao' => 'Diretor/Desenvolvedor Back-End',
                 'foto' => 'img/devs/aldere.jpeg',
             ],
             [
                 'nome' => 'Beatriz',
-                'funcao' => 'Back-end',
+                'funcao' => 'TPA',
                 'foto' => 'img/devs/beatriz.jpeg',
             ],
             [
                 'nome' => 'Cesar',
-                'funcao' => 'Front-end',
+                'funcao' => 'Desenvolvedor Front-End',
                 'foto' => 'img/devs/cesar.jpeg',
             ],
             [
                 'nome' => 'Felipe',
-                'funcao' => 'Back-end',
+                'funcao' => 'Desenvolvedor Fullstacl/DBA',
                 'foto' => 'img/devs/felipe.jpeg',
             ],
             [
-                'nome' => 'Geo Campanella',
-                'funcao' => 'Analista de Sistemas',
+                'nome' => ' Geovanna Campanella',
+                'funcao' => 'Front-End/Analista',
                 'foto' => 'img/devs/geoCampanella.jpeg',
             ],
             [
-                'nome' => 'Gio Emanuelly',
+                'nome' => 'Giovanna Emanuely',
                 'funcao' => 'UI/UX',
-                'foto' => 'img/devs/gioEmanuelly.jpeg',
+                'foto' => 'img/devs/gioEmanuely.jpeg',
             ],
             [
                 'nome' => 'Gustavo',
-                'funcao' => 'DevOps',
+                'funcao' => 'Designer',
                 'foto' => 'img/devs/gustavo.jpeg',
             ],
             [
                 'nome' => 'Marco',
-                'funcao' => 'Engenheiro de Software',
+                'funcao' => 'Desenvolvedor Back-End',
                 'foto' => 'img/devs/Marco.jpeg',
             ],
             [
                 'nome' => 'Mateus V',
-                'funcao' => 'QA',
+                'funcao' => 'Desenvolvedor Back-End/DBA',
                 'foto' => 'img/devs/mateusV.jpeg',
             ],
             [
                 'nome' => 'Matheus Dias',
-                'funcao' => 'Arquiteto de Solucoes',
+                'funcao' => 'Desenvolvedor Fullstack',
                 'foto' => 'img/devs/matheusDias.jpeg',
             ],
             [
                 'nome' => 'Natan',
-                'funcao' => 'Especialista em Dados',
+                'funcao' => 'tester',
                 'foto' => 'img/devs/natan.jpeg',
             ],
             [
                 'nome' => 'Vitor',
-                'funcao' => 'Seguranca da Informacao',
+                'funcao' => 'Gerente/Desenvolvedor Back-End',
                 'foto' => 'img/devs/vitor.jpeg',
             ],
         ];
 
         foreach ($devs as $dev) {
-            DB::table('dev')->updateOrInsert(
+            DB::table('devs')->updateOrInsert(
                 ['nome' => $dev['nome']],
                 $dev
             );

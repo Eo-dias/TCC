@@ -9,7 +9,7 @@ class Dev extends Model
 {
     use HasFactory;
 
-    protected $table = 'dev';
+    protected $table = 'devs';
 
     protected $fillable = [
         'nome',

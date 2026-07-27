@@ -16,7 +16,7 @@ body {
     left: 0;
     padding: 7px 0;
     z-index: 1000;
-    background: rgba(12, 20, 78, 0.88);
+    background: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 15px rgba(8, 16, 62, 0.38);
 }
@@ -49,7 +49,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #cfd8ff;
+    color: #0f1c58;
     font-size: 14px;
     position: relative;
     transition: 0.3s;
@@ -67,7 +67,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ffffff;
+    color: #000000;
 }
 
 .nav-links a:hover::after {
@@ -172,7 +172,7 @@ body {
 
 .about-title {
     text-align: center;
-    font-size: 19px;
+    font-size: 29px;
     font-weight: 600;
     letter-spacing: 1px;
     background: linear-gradient(90deg, #144999 12%, #a8d4ee 40%, #9aa6ff 67%, #7a88ff 75%, #5b6cff 100%);
@@ -197,21 +197,9 @@ body {
     overflow: visible;
 }
 
-.about-left {
-    position: absolute;
-    left: 110px;
-    top: 20px;
-}
-
-.about-left img {
-    width: 220px;
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.25));
-    transform: translateY(-10px);
-}
-
 .about-right {
-    margin-left: 320px;
-    text-align: left;
+    margin-left: 0 auto;
+    text-align: center;
 }
 
 .about-right h2 {
@@ -221,8 +209,10 @@ body {
 }
 
 .about-right p {
-    color: #555;
+    color: #000000;
     line-height: 1.7;
+    font-size: 20px;
+    
 }
 
 .tech-carousel {
@@ -427,7 +417,7 @@ body.modal-open footer {
 
 .Dev-title {
     text-align: center;
-    font-size: 19px;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 1px;
     background: linear-gradient(90deg, #144999 12%, #a8d4ee 40%, #9aa6ff 67%, #7a88ff 75%, #5b6cff 100%);
@@ -445,11 +435,17 @@ body.modal-open footer {
     background: #e9e7f2;
     width: 100%;
     padding: 80px 10%;
-    border-radius: 40px 40px;
+    border-radius: 40px;
     position: relative;
     box-shadow: 0 -20px 60px rgba(0,0,0,0.3);
     transform: translateY(-170px);
     overflow: visible;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
 }
 
 .figura {
@@ -556,7 +552,7 @@ body.modal-open footer {
 .secao-formulario {
     height: 600px;
     width: auto;
-    background-color: #f3e7ff;
+    background-color: #e2dfe4;
     display: flex;
     justify-content: space-around;
     border-radius: 50px 50px 0 0;
@@ -672,8 +668,8 @@ body.modal-open footer {
 
 .footer-home {
     width: 100%;
-    color: #f7f9ff;
-    background: #101b5a;
+    color: #000000;
+    background: #ffffff;
 }
 
 .div-footer1 {
@@ -713,12 +709,13 @@ body.modal-open footer {
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
+    color: #000000;
 }
 
 .iconesHome {
     height: 35px;
     width: 35px;
-    color: #a8d4ee;
+    color: #000000;
     transition: 0.3s;
 }
 

@@ -40,11 +40,8 @@
     </section>
 
     <section class="about" id="sobre">
-        <h3 class="about-title">Sobre nos</h3>
+        <h1 class="about-title">Sobre nós</h1>
         <div class="about-box">
-            <div class="about-left">
-                <img src="{{ asset('img/sobrenos.png') }}" alt="Sobre Raven">
-            </div>
             <div class="about-right">
                 <h2>Tecnologia que faz suas ideias ganharem asas.</h2>
                 <p>
@@ -150,7 +147,7 @@
     </section>
 
     <section class="devs" id="equipe">
-        <h3 class="Dev-title">Nossos Desenvolvedores</h3>
+        <h1 class="Dev-title">Nossos Desenvolvedores</h1>
         <div class="dev-box">
             <div class="about-right">
                 <h2>Aqueles que fazem a Raven acontecer</h2>
@@ -177,7 +174,7 @@
     <section class="secao-formulario" id="contato">
         <div class="div-textForm">
             <div>
-                <h1 class="title-textForm">Nos Contate</h1>
+                <h1 class="title-textForm">Nos contate</h1>
                 <p class="text-textForm">Nossa equipe esta preparada para entender seu desafio e estruturar uma proposta tecnica com foco em resultado, prazo e escalabilidade para o seu negocio.</p>
             </div>
             <div class="contato-box">
@@ -213,10 +210,10 @@
                 &copy; Todos os direitos reservados para Raven - 2026
             </div>
             <div class="icones-footer">
-                <a href="#"><img class="iconesHome" src="https://cdn.simpleicons.org/instagram/a8d4ee" alt="Instagram"></a>
-                <a href="#"><img class="iconesHome" src="https://cdn.simpleicons.org/whatsapp/a8d4ee" alt="WhatsApp"></a>
-                <a href="#"><img class="iconesHome" src="https://cdn.simpleicons.org/x/a8d4ee" alt="X"></a>
-                <a href="#"><img class="iconesHome" src="https://cdn.simpleicons.org/threads/a8d4ee" alt="Threads"></a>
+                <a href="#"><img class="iconesHome" src="https://cdn.simpleicons.org/instagram/000000" alt="Instagram"></a>
+                <a href="#"><img class="iconesHome" src="https://cdn.simpleicons.org/whatsapp/000000" alt="WhatsApp"></a>
+                <a href="#"><img class="iconesHome" src="https://cdn.simpleicons.org/x/000000" alt="X"></a>
+                <a href="#"><img class="iconesHome" src="https://cdn.simpleicons.org/threads/000000" alt="Threads"></a>
             </div>
         </div>
     </footer>

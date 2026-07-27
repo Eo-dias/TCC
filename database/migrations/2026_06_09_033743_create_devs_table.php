@@ -1,30 +1,24 @@
 <?php
 
-namespace Database\Seeders;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-use Illuminate\Database\Seeder;
-use App\Models\Dev;
-
-class DevSeeder extends Seeder
+return new class extends Migration
 {
-    public function run(): void
+    public function up(): void
     {
-        Dev::create([
-            'nome' => 'Matheus Dias',
-            'funcao' => 'Desenvolvedor Full Stack',
-            'foto' => 'img/matheus.png',
-        ]);
-
-        Dev::create([
-            'nome' => 'Dev 2',
-            'funcao' => 'Front-end',
-            'foto' => 'img/dev2.png',
-        ]);
-
-        Dev::create([
-            'nome' => 'Dev 3',
-            'funcao' => 'Back-end',
-            'foto' => 'img/dev3.png',
-        ]);
+        Schema::create('devs', function (Blueprint $table) {
+            $table->id();
+            $table->string('nome');
+            $table->string('funcao');
+            $table->string('foto');
+            $table->timestamps();
+        });
     }
-}
+
+    public function down(): void
+    {
+        Schema::dropIfExists('devs');
+    }
+};
