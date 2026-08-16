@@ -96,3 +96,40 @@ npm run dev
 
 
 **8. Inicie o servidor:**
+
+
+---
+
+## 🎓 Contexto Acadêmico
+
+Este projeto foi desenvolvido como parte do **Trabalho de Conclusão de Curso (TCC)** do curso Técnico em **Análise e Desenvolvimento de Sistemas** na **ETEC de Guaianases**.
+
+O projeto teve como objetivos:
+
+- 🔹 Aplicar conhecimentos de desenvolvimento web full-stack
+- 🔹 Utilizar o framework Laravel na prática
+- 🔹 Implementar arquitetura MVC
+- 🔹 Trabalhar com integração de banco de dados
+- 🔹 Desenvolver interfaces modernas e responsivas
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Matheus Dias** 🚀
+
+<p align="left">
+    <a href="https://github.com/Eo-dias" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    </a>
+    <a href="https://www.linkedin.com/in/matheus-diass-/" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+    </a>
+    <a href="https://www.instagram.com/eo.diasx7/" target="_blank">
+        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+    </a>
+</p>
+
+---
+
+⭐ **Se gostou do projeto, deixa uma estrela!**
