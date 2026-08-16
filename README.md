@@ -64,3 +64,35 @@ O projeto conta com um formulário de contato funcional, permitindo que visitant
    ```bash
    git clone https://github.com/Eo-dias/TCC.git
    cd TCC
+
+**2. Instale as dependências do PHP:**
+composer install
+
+
+**3. Instale as dependências do Node:**
+npm install
+
+
+**4. Configure o ambiente:**
+cp .env.example .env
+php artisan key:generate
+
+
+**5. Configure o banco de dados no arquivo `.env`:**
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=raven
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+**6. Execute as migrations:**
+php artisan migrate
+
+
+**7. Compile os assets:**
+npm run dev
+
+
+**8. Inicie o servidor:**
