@@ -97,7 +97,48 @@ npm run dev
 
 **8. Inicie o servidor:**
 
+## 🚀 Como Executar
 
+### 📋 Pré-requisitos
+
+- 🐘 **PHP** 8.1 ou superior
+- 📦 **Composer** instalado
+- 🗄️ **MySQL** ou MariaDB
+- 🔧 **Node.js** e **npm** (para assets)
+
+### ⚙️ Passo a passo
+
+**1. Clone o repositório:**
+> `git clone https://github.com/Eo-dias/TCC.git`
+
+**2. Entre na pasta:**
+> `cd TCC`
+
+**3. Instale as dependências do PHP:**
+> `composer install`
+
+**4. Instale as dependências do Node:**
+> `npm install`
+
+**5. Copie o arquivo de ambiente:**
+> `cp .env.example .env`
+
+**6. Gere a chave da aplicação:**
+> `php artisan key:generate`
+
+**7. Configure o banco de dados** no arquivo `.env` com suas credenciais MySQL
+
+**8. Execute as migrations:**
+> `php artisan migrate`
+
+**9. Compile os assets:**
+> `npm run dev`
+
+**10. Inicie o servidor:**
+> `php artisan serve`
+
+**11. Acesse no navegador:**
+> http://localhost:8000
 ---
 
 ## 🎓 Contexto Acadêmico
