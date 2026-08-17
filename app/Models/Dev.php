@@ -15,5 +15,8 @@ class Dev extends Model
         'nome',
         'funcao',
         'foto',
+        'github',
+        'linkedin',
+        'instagram',
     ];
 }
