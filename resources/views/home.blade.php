@@ -19,6 +19,7 @@
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#parceiros">Parceiros</a></li>
                 <li><a href="#equipe">Equipe</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -210,6 +211,79 @@
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parceiros" id="parceiros">
+        <div class="parceiros-bg"></div>
+        <div class="container parceiros-container">
+            <div class="parceiros-header">
+                <span class="parceiros-badge">
+                    <i data-lucide="handshake"></i>
+                    Parceiros
+                </span>
+                <h2 class="parceiros-title">Parceiros que <span class="parceiros-highlight">confiam</span> na nossa entrega</h2>
+                <p class="parceiros-subtitle">Colaboramos com empresas que compartilham nossa visão de excelência tecnológica e inovação contínua.</p>
+            </div>
+
+            <div class="parceiros-carousel" aria-label="Logos dos parceiros">
+                <div class="parceiros-track" id="parceirosTrack">
+                    <div class="parceiro-card" data-name="Apolo">
+                        <div class="parceiro-card-inner">
+                            <img src="{{ asset('img/Parceiros/apolo.png') }}" alt="Apolo" class="parceiro-logo">
+                            <div class="parceiro-glow"></div>
+                        </div>
+                        <span class="parceiro-name">Apolo</span>
+                    </div>
+                    <div class="parceiro-card" data-name="Lirium">
+                        <div class="parceiro-card-inner">
+                            <img src="{{ asset('img/Parceiros/lirium.png') }}" alt="Lirium" class="parceiro-logo">
+                            <div class="parceiro-glow"></div>
+                        </div>
+                        <span class="parceiro-name">Lirium</span>
+                    </div>
+                    <div class="parceiro-card" data-name="Apolo">
+                        <div class="parceiro-card-inner">
+                            <img src="{{ asset('img/Parceiros/apolo.png') }}" alt="Apolo" class="parceiro-logo">
+                            <div class="parceiro-glow"></div>
+                        </div>
+                        <span class="parceiro-name">Apolo</span>
+                    </div>
+                    <div class="parceiro-card" data-name="Lirium">
+                        <div class="parceiro-card-inner">
+                            <img src="{{ asset('img/Parceiros/lirium.png') }}" alt="Lirium" class="parceiro-logo">
+                            <div class="parceiro-glow"></div>
+                        </div>
+                        <span class="parceiro-name">Lirium</span>
+                    </div>
+                    <div class="parceiro-card" data-name="Apolo">
+                        <div class="parceiro-card-inner">
+                            <img src="{{ asset('img/Parceiros/apolo.png') }}" alt="Apolo" class="parceiro-logo">
+                            <div class="parceiro-glow"></div>
+                        </div>
+                        <span class="parceiro-name">Apolo</span>
+                    </div>
+                    <div class="parceiro-card" data-name="Lirium">
+                        <div class="parceiro-card-inner">
+                            <img src="{{ asset('img/Parceiros/lirium.png') }}" alt="Lirium" class="parceiro-logo">
+                            <div class="parceiro-glow"></div>
+                        </div>
+                        <span class="parceiro-name">Lirium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="parceiros-stats">
+                <div class="parceiro-stat">
+                    <span class="parceiro-stat-number">2+</span>
+                    <span class="parceiro-stat-label">Parceiros Ativos</span>
+                </div>
+                <div class="parceiro-stat-divider"></div>
+                <div class="parceiro-stat">
+                    <span class="parceiro-stat-number">100%</span>
+                    <span class="parceiro-stat-label">Satisfação</span>
                 </div>
             </div>
         </div>
