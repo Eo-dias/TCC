@@ -650,17 +650,14 @@ body {
 
 .diferenciais {
     background: #020024;
-    padding: 20px 5% 100px;
-    margin-top: -140px;
+    padding: 120px 5% 100px;
     text-align: center;
 }
 
 .dif-title {
-    font-size: 32px;
+    font-size: clamp(32px, 4vw, 44px);
     margin-bottom: 60px;
     text-align: center;
-    position: relative;
-    z-index: 10;
     background: linear-gradient(90deg, #144999 12%, #a8d4ee 40%, #9aa6ff 67%, #7a88ff 75%, #5b6cff 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -669,17 +666,19 @@ body {
 }
 
 .dif-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    flex-wrap: wrap;
     max-width: 1320px;
     margin: 0 auto;
+    align-items: stretch;
 }
 
 .dif-card {
-    width: 300px;
-    padding: 24px;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
@@ -687,6 +686,9 @@ body {
     box-shadow: 0 0 15px rgba(120, 140, 255, 0.2), inset 0 0 10px rgba(120, 140, 255, 0.1);
     text-align: left;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .project-trigger {
@@ -696,15 +698,18 @@ body {
     text-align: left;
     cursor: pointer;
     color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-image-slot {
     width: 100%;
     aspect-ratio: 16 / 10;
-    border-radius: 12px;
+    border-radius: 20px 20px 0 0;
     overflow: hidden;
-    border: 1px solid rgba(168, 212, 238, 0.45);
-    margin-bottom: 18px;
+    border: none;
+    margin: 0;
     background: rgba(255, 255, 255, 0.07);
 }
 
@@ -713,6 +718,14 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.4s ease;
+}
+
+.dif-card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .dif-card h3 {
@@ -729,12 +742,17 @@ body {
     color: #cfd8ff;
     font-size: 14px;
     line-height: 1.6;
+    margin: 0;
 }
 
 .dif-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 15px 35px rgba(91, 108, 255, 0.3);
     border: 1px solid rgba(120, 140, 255, 0.7);
+}
+
+.dif-card:hover .project-image-slot img {
+    transform: scale(1.04);
 }
 
 body.modal-open nav,
@@ -2057,6 +2075,49 @@ textarea.input-form {
 
     .parceiro-card-inner {
         padding: 16px;
+    }
+}
+
+/* Responsive Projetos */
+@media (max-width: 1024px) {
+    .dif-title {
+        font-size: 36px;
+    }
+    .dif-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .diferenciais {
+        padding: 80px 5% 80px;
+    }
+    .dif-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .dif-container {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+    }
+    .dif-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .dif-title {
+        font-size: 26px;
+    }
+    .dif-card-content {
+        padding: 20px;
+    }
+    .dif-card h3 {
+        font-size: 17px;
+    }
+    .dif-card p {
+        font-size: 13px;
     }
 }
 }

@@ -46,22 +46,6 @@
                     <span>Ver Projetos</span>
                 </a>
             </div>
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <span class="hero-stat-number">50+</span>
-                    <span class="hero-stat-label">Projetos Entregues</span>
-                </div>
-                <div class="hero-stat-divider"></div>
-                <div class="hero-stat">
-                    <span class="hero-stat-number">30+</span>
-                    <span class="hero-stat-label">Clientes Satisfeitos</span>
-                </div>
-                <div class="hero-stat-divider"></div>
-                <div class="hero-stat">
-                    <span class="hero-stat-number">5+</span>
-                    <span class="hero-stat-label">Anos de Mercado</span>
-                </div>
-            </div>
         </div>
         <div class="hero-visual">
             <div class="hero-code-window">
@@ -158,32 +142,6 @@
                     para atender às necessidades de empresas de pequeno e médio porte, com foco em
                     <strong>eficiência, inovação e qualidade</strong>.
                 </p>
-            </div>
-
-            <div class="about-features">
-                <div class="about-feature-card">
-                    <div class="about-feature-icon about-icon-blue">
-                        <i data-lucide="target"></i>
-                    </div>
-                    <h3 class="about-feature-title">Nossa Missão</h3>
-                    <p class="about-feature-text">Entregar soluções tecnológicas de alta qualidade que impulsionem o crescimento e a inovação dos nossos clientes.</p>
-                </div>
-
-                <div class="about-feature-card">
-                    <div class="about-feature-icon about-icon-purple">
-                        <i data-lucide="eye"></i>
-                    </div>
-                    <h3 class="about-feature-title">Nossa Visão</h3>
-                    <p class="about-feature-text">Ser referência em desenvolvimento de software no Brasil, reconhecida pela excelência técnica e humanização.</p>
-                </div>
-
-                <div class="about-feature-card">
-                    <div class="about-feature-icon about-icon-green">
-                        <i data-lucide="heart"></i>
-                    </div>
-                    <h3 class="about-feature-title">Nossos Valores</h3>
-                    <p class="about-feature-text">Transparência, comprometimento, inovação constante e paixão por criar experiências digitais memoráveis.</p>
-                </div>
             </div>
 
             <div class="about-tech-section">
