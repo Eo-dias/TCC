@@ -260,26 +260,27 @@ body {
 .wing-svg {
     width: 420px;
     height: 420px;
-    opacity: 0.2;
+    opacity: 0.25;
     transition: opacity 0.6s ease;
 }
 
 .hero-wing:hover .wing-svg {
-    opacity: 0.35;
+    opacity: 0.4;
 }
 
-.feather {
+.wing-line {
     stroke: #5b6cff;
-    stroke-width: 1.2;
+    stroke-width: 1.5;
     fill: none;
-    opacity: 0.6;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: wingDraw 8s ease-in-out infinite;
 }
 
-.feather-lower {
-    stroke: #5b6cff;
-    stroke-width: 1;
-    fill: none;
-    opacity: 0.45;
+@keyframes wingDraw {
+    0% { stroke-dashoffset: 600; }
+    50% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 600; }
 }
 
 .wing-glow {
@@ -287,7 +288,7 @@ body {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(91, 108, 255, 0.1), transparent 70%);
+    background: radial-gradient(circle, rgba(91, 108, 255, 0.12), transparent 70%);
     pointer-events: none;
     animation: glowPulse 6s ease-in-out infinite;
 }
