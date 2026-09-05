@@ -260,20 +260,44 @@ body {
 .wing-svg {
     width: 420px;
     height: 420px;
-    opacity: 0.25;
+    opacity: 0.2;
     transition: opacity 0.6s ease;
 }
 
 .hero-wing:hover .wing-svg {
-    opacity: 0.4;
+    opacity: 0.35;
 }
 
-.wing-line {
+.wing-shape {
+    fill: #5b6cff;
+    fill-opacity: 0.1;
+    stroke: none;
+}
+
+.wing-spine {
     stroke: #5b6cff;
-    stroke-width: 1.5;
+    stroke-width: 1.8;
     fill: none;
-    stroke-dasharray: 600;
-    stroke-dashoffset: 600;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: wingDraw 8s ease-in-out infinite;
+}
+
+.wing-barb {
+    stroke: #5b6cff;
+    stroke-width: 1.2;
+    fill: none;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: wingDraw 8s ease-in-out infinite;
+}
+
+.wing-barbule {
+    stroke: #5b6cff;
+    stroke-width: 0.8;
+    fill: none;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
     animation: wingDraw 8s ease-in-out infinite;
 }
 
