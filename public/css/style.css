@@ -736,6 +736,9 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
+    padding: 0 24px;
+    margin-top: 16px;
+    line-height: 1.4;
 }
 
 .dif-card p {
@@ -743,6 +746,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
     margin: 0;
+    padding: 0 24px 24px;
 }
 
 .dif-card:hover {

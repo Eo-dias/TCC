@@ -17,9 +17,9 @@
            </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#parceiros">Parceiros</a></li>
+<li><a href="#sobre">Sobre</a></li>
+                 <li><a href="#parceiros">Parceiros</a></li>
+                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#equipe">Equipe</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
