@@ -31,14 +31,50 @@
 
    <section class="hero" id="inicio">
     <div class="hero-bg">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-        <div class="orb orb-4"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-glow-2"></div>
     </div>
     <div class="hero-grid"></div>
     <div class="hero-mouse-glow"></div>
     <div class="hero-container">
+        <div class="hero-visual">
+            <div class="mockup-composition">
+                <div class="mockup-panel mockup-panel-1">
+                    <div class="mockup-header-bar">
+                        <div class="mockup-dot"></div>
+                        <div class="mockup-dot"></div>
+                        <div class="mockup-dot"></div>
+                        <span class="mockup-title">Raven — Dashboard</span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-code-line"></div>
+                        <div class="mockup-code-line short"></div>
+                        <div class="mockup-code-line"></div>
+                        <div class="mockup-code-line medium"></div>
+                        <div class="mockup-stat-row">
+                            <div class="mockup-stat-box"></div>
+                            <div class="mockup-stat-box"></div>
+                            <div class="mockup-stat-box"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mockup-panel mockup-panel-2">
+                    <div class="mockup-header-bar">
+                        <div class="mockup-dot"></div>
+                        <div class="mockup-dot"></div>
+                        <div class="mockup-dot"></div>
+                        <span class="mockup-title">Analytics</span>
+                    </div>
+                    <div class="mockup-chart">
+                        <div class="mockup-bar"></div>
+                        <div class="mockup-bar"></div>
+                        <div class="mockup-bar"></div>
+                        <div class="mockup-bar"></div>
+                        <div class="mockup-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="hero-text">
             <span class="hero-badge">
                 <span class="hero-badge-dot"></span>
