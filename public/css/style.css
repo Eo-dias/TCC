@@ -257,46 +257,17 @@ body {
     justify-content: center;
 }
 
-.wing-svg {
+.wing-image {
     width: 420px;
     height: 420px;
+    object-fit: contain;
     opacity: 0.3;
     transition: opacity 0.6s ease;
+    filter: brightness(2) hue-rotate(200deg) saturate(0.5);
 }
 
-.hero-wing:hover .wing-svg {
+.hero-wing:hover .wing-image {
     opacity: 0.45;
-}
-
-.wing-body {
-    fill: #5b6cff;
-    fill-opacity: 0.15;
-    stroke: none;
-}
-
-.wing-ridge {
-    stroke: #5b6cff;
-    stroke-width: 2;
-    fill: none;
-    stroke-dasharray: 350;
-    stroke-dashoffset: 350;
-    animation: wingDraw 7s ease-in-out infinite;
-}
-
-.wing-barb {
-    stroke: #5b6cff;
-    stroke-width: 1.2;
-    fill: none;
-    stroke-dasharray: 200;
-    stroke-dashoffset: 200;
-    animation: wingDraw 7s ease-in-out infinite;
-    animation-delay: 0.5s;
-}
-
-@keyframes wingDraw {
-    0% { stroke-dashoffset: 600; }
-    50% { stroke-dashoffset: 0; }
-    100% { stroke-dashoffset: 600; }
 }
 
 .wing-glow {

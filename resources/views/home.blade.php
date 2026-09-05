@@ -52,17 +52,7 @@
         </div>
 <div class="hero-wing">
     <div class="wing-glow"></div>
-    <svg class="wing-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path class="wing-body" d="M175,275 C185,255 230,190 290,155 C330,130 365,125 390,145 C398,152 400,170 395,190 C390,210 365,230 330,250 C295,270 255,285 215,292 C195,296 180,290 175,280 Z" />
-        <path class="wing-ridge" d="M180,275 C200,240 250,175 310,140 C340,125 365,125 385,140" />
-        <path class="wing-barb" d="M200,260 C210,240 240,195 280,165 C260,175 230,210 205,240" />
-        <path class="wing-barb" d="M220,235 C235,210 270,170 310,148 C290,160 260,195 225,220" />
-        <path class="wing-barb" d="M245,210 C260,188 290,158 325,142 C305,155 275,185 250,212" />
-        <path class="wing-barb" d="M270,190 C285,172 310,150 340,140 C320,150 295,172 275,192" />
-        <path class="wing-barb" d="M295,175 C310,160 335,145 360,140 C340,148 315,165 295,178" />
-        <path class="wing-barb" d="M190,265 C200,250 220,225 250,200 C235,210 210,235 190,255" />
-        <path class="wing-barb" d="M210,248 C225,228 255,195 290,170 C270,182 240,215 215,235" />
-    </svg>
+    <img class="wing-image" src="https://picsum.photos/seed/raven-wing/400/400" alt="Asa de Corvo" />
 </div>
     </div>
 </section>
