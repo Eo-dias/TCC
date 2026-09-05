@@ -260,58 +260,41 @@ body {
 .wing-svg {
     width: 420px;
     height: 420px;
-    opacity: 0.12;
+    opacity: 0.2;
     transition: opacity 0.6s ease;
 }
 
 .hero-wing:hover .wing-svg {
-    opacity: 0.25;
+    opacity: 0.35;
 }
 
-.wing-line {
+.feather {
     stroke: #5b6cff;
-    stroke-width: 1.5;
+    stroke-width: 1.2;
     fill: none;
-    stroke-dasharray: 600;
-    stroke-dashoffset: 600;
-    animation: wingDraw 5s ease forwards;
+    opacity: 0.6;
 }
 
-.wing-line-2 {
+.feather-lower {
     stroke: #5b6cff;
     stroke-width: 1;
     fill: none;
-    stroke-dasharray: 400;
-    stroke-dashoffset: 400;
-    animation: wingDraw 4s ease forwards 0.8s backwards;
-}
-
-.wing-line-3 {
-    stroke: #a8d4ee;
-    stroke-width: 0.8;
-    fill: none;
-    stroke-dasharray: 350;
-    stroke-dashoffset: 350;
-    animation: wingDraw 3.5s ease forwards 1.6s backwards;
-}
-
-@keyframes wingDraw {
-    to { stroke-dashoffset: 0; }
+    opacity: 0.45;
 }
 
 .wing-glow {
     position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(91, 108, 255, 0.08), transparent 70%);
+    background: radial-gradient(circle, rgba(91, 108, 255, 0.1), transparent 70%);
     pointer-events: none;
-    animation: glowPulse 4s ease-in-out infinite;
+    animation: glowPulse 6s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
-    0%, 100% { opacity: 0.5; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.05); }
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.03); }
 }
 
 /* ===== STATS ===== */
