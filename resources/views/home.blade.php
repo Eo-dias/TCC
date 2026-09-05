@@ -52,7 +52,9 @@
         </div>
 <div class="hero-wing">
     <div class="wing-glow"></div>
-    <img class="wing-image" src="https://picsum.photos/seed/raven-wing/400/400" alt="Asa de Corvo" />
+    <div class="wing-orbit">
+        <div class="wing-circle"></div>
+    </div>
 </div>
     </div>
 </section>
