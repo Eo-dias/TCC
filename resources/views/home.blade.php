@@ -30,52 +30,14 @@
     </nav>
 
    <section class="hero" id="inicio">
-    <div class="hero-bg">
-        <div class="hero-glow"></div>
-        <div class="hero-glow-2"></div>
+    <div class="hero-atmosphere">
+        <div class="hero-glow-primary"></div>
+        <div class="hero-glow-secondary"></div>
+        <div class="hero-grid"></div>
     </div>
-    <div class="hero-grid"></div>
     <div class="hero-mouse-glow"></div>
     <div class="hero-container">
-        <div class="hero-visual">
-            <div class="mockup-composition">
-                <div class="mockup-panel mockup-panel-1">
-                    <div class="mockup-header-bar">
-                        <div class="mockup-dot"></div>
-                        <div class="mockup-dot"></div>
-                        <div class="mockup-dot"></div>
-                        <span class="mockup-title">Raven — Dashboard</span>
-                    </div>
-                    <div class="mockup-body">
-                        <div class="mockup-code-line"></div>
-                        <div class="mockup-code-line short"></div>
-                        <div class="mockup-code-line"></div>
-                        <div class="mockup-code-line medium"></div>
-                        <div class="mockup-stat-row">
-                            <div class="mockup-stat-box"></div>
-                            <div class="mockup-stat-box"></div>
-                            <div class="mockup-stat-box"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mockup-panel mockup-panel-2">
-                    <div class="mockup-header-bar">
-                        <div class="mockup-dot"></div>
-                        <div class="mockup-dot"></div>
-                        <div class="mockup-dot"></div>
-                        <span class="mockup-title">Analytics</span>
-                    </div>
-                    <div class="mockup-chart">
-                        <div class="mockup-bar"></div>
-                        <div class="mockup-bar"></div>
-                        <div class="mockup-bar"></div>
-                        <div class="mockup-bar"></div>
-                        <div class="mockup-bar"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-text">
+        <div class="hero-content">
             <span class="hero-badge">
                 <span class="hero-badge-dot"></span>
                 Transformando ideias em realidade
@@ -92,6 +54,104 @@
                     <span>Ver Projetos</span>
                 </a>
             </div>
+        </div>
+        <div class="hero-terminal" aria-label="Raven CLI Terminal">
+            <div class="terminal-frame">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot dot-close"></span>
+                        <span class="dot dot-minimize"></span>
+                        <span class="dot dot-expand"></span>
+                    </div>
+                    <div class="terminal-title">
+                        <span class="terminal-icon" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </span>
+                        <span class="terminal-title-text">raven@raven:~$</span>
+                    </div>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <div class="terminal-line">
+                        <span class="prompt">raven@raven:~$</span>
+                        <span class="command" data-text="raven init --verbose"></span>
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+                    <div class="terminal-line output">
+                        <span class="output-text">[raven] Initializing Raven OS v3.2.1...</span>
+                    </div>
+                    <div class="terminal-line output">
+                        <span class="output-text">[raven] Loading core modules: cli, deploy, scale, monitor</span>
+                    </div>
+                    <div class="terminal-line output success">
+                        <span class="output-text">[raven] Core modules loaded successfully</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="prompt">raven@raven:~$</span>
+                        <span class="command" data-text="raven deploy --env production"></span>
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+                    <div class="terminal-line output">
+                        <span class="output-text">[raven] Building production bundle...</span>
+                    </div>
+                    <div class="terminal-line output">
+                        <span class="output-text">[raven] Optimizing assets (CSS/JS/Images)</span>
+                    </div>
+                    <div class="terminal-line output">
+                        <span class="output-text">[raven] Running security audit...</span>
+                    </div>
+                    <div class="terminal-line output success">
+                        <span class="output-text">[raven] Deploy complete — 2.3s | 47 modules | 0 vulnerabilities</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="prompt">raven@raven:~$</span>
+                        <span class="command" data-text="raven scale --auto"></span>
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+                    <div class="terminal-line output">
+                        <span class="output-text">[raven] Analyzing traffic patterns...</span>
+                    </div>
+                    <div class="terminal-line output">
+                        <span class="output-text">[raven] Scaling workers: 3 → 12 based on load prediction</span>
+                    </div>
+                    <div class="terminal-line output success">
+                        <span class="output-text">[raven] Auto-scaling active — 99.99% uptime SLA</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="prompt">raven@raven:~$</span>
+                        <span class="command" data-text="raven monitor --live"></span>
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+                    <div class="terminal-line output">
+                        <span class="output-text">[raven] Starting real-time monitoring...</span>
+                    </div>
+                    <div class="terminal-line output metric">
+                        <span class="metric-label">CPU:</span>
+                        <span class="metric-value">12%</span>
+                        <span class="metric-label">RAM:</span>
+                        <span class="metric-value">2.1/16 GB</span>
+                        <span class="metric-label">REQ/s:</span>
+                        <span class="metric-value">1,847</span>
+                        <span class="metric-label">LATENCY:</span>
+                        <span class="metric-value">23ms</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="prompt">raven@raven:~$</span>
+                        <span class="command" data-text="raven status"></span>
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+                    <div class="terminal-line output success">
+                        <span class="output-text">[raven] All systems operational — Ready for your next idea</span>
+                    </div>
+                    <div class="terminal-line idle">
+                        <span class="prompt">raven@raven:~$</span>
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="terminal-glow" aria-hidden="true"></div>
+        </div>
+    </div>
+</section>
         </div>
     </div>
 </section>
@@ -559,13 +619,61 @@
     <script src="{{ url('js/carrossel.js') }}"></script>
     <script>
         lucide.createIcons();
+
+        // Hero mouse glow
         document.addEventListener('mousemove', (e) => {
             const glow = document.querySelector('.hero-mouse-glow');
             if (glow) {
-                glow.style.left = (e.clientX - 300) + 'px';
-                glow.style.top = (e.clientY - 300) + 'px';
+                glow.style.left = (e.clientX - 225) + 'px';
+                glow.style.top = (e.clientY - 225) + 'px';
             }
         });
+
+        // Terminal typing animation
+        const terminalBody = document.getElementById('terminalBody');
+        if (terminalBody) {
+            const lines = terminalBody.querySelectorAll('.terminal-line');
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (!reducedMotion) {
+                lines.forEach((line, index) => {
+                    const command = line.querySelector('.command');
+                    const cursor = line.querySelector('.cursor');
+
+                    if (command) {
+                        const text = command.dataset.text;
+                        if (text) {
+                            command.style.maxWidth = '0';
+                            command.style.opacity = '1';
+
+                            setTimeout(() => {
+                                command.style.animation = 'typing 0.6s steps(30, end) forwards';
+                            }, 300 + index * 250);
+
+                            setTimeout(() => {
+                                command.classList.add('finished');
+                                if (cursor) cursor.style.display = 'inline-block';
+                            }, 900 + index * 250);
+                        }
+                    }
+
+                    const outputs = line.querySelectorAll('.output-text');
+                    outputs.forEach((output, outIndex) => {
+                        setTimeout(() => {
+                            output.style.opacity = '1';
+                            output.style.transform = 'translateY(0)';
+                        }, 1100 + index * 250 + outIndex * 80);
+                    });
+                });
+            } else {
+                lines.forEach(line => line.style.opacity = '1');
+                terminalBody.querySelectorAll('.command').forEach(cmd => {
+                    cmd.style.maxWidth = 'none';
+                    cmd.style.borderRight = 'none';
+                });
+                terminalBody.querySelectorAll('.cursor').forEach(c => c.style.display = 'none');
+            }
+        }
     </script>
 </body>
 </html>
