@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raven</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
@@ -47,84 +50,14 @@
                 </a>
             </div>
         </div>
-        <div class="hero-visual">
-            <div class="hero-code-window">
-                <div class="hero-code-header">
-                    <div class="hero-code-dots">
-                        <span class="dot dot-red"></span>
-                        <span class="dot dot-yellow"></span>
-                        <span class="dot dot-green"></span>
-                    </div>
-                    <div class="hero-code-filename">
-                        <i data-lucide="code-2"></i>
-                        <span>raven.js</span>
-                    </div>
-                </div>
-                <div class="hero-code-body">
-                    <div class="hero-code-line">
-                        <span class="code-num">1</span>
-                        <span class="code-keyword">const</span> <span class="code-var">raven</span> <span class="code-op">=</span> <span class="code-func">createSolution</span>({
-                    </div>
-                    <div class="hero-code-line">
-                        <span class="code-num">2</span>
-                        &nbsp;&nbsp;<span class="code-prop">name</span>: <span class="code-string">'Sua Ideia'</span>,
-                    </div>
-                    <div class="hero-code-line">
-                        <span class="code-num">3</span>
-                        &nbsp;&nbsp;<span class="code-prop">tech</span>: [<span class="code-string">'Laravel'</span>, <span class="code-string">'React'</span>],
-                    </div>
-                    <div class="hero-code-line">
-                        <span class="code-num">4</span>
-                        &nbsp;&nbsp;<span class="code-prop">quality</span>: <span class="code-string">'premium'</span>,
-                    </div>
-                    <div class="hero-code-line">
-                        <span class="code-num">5</span>
-                        &nbsp;&nbsp;<span class="code-prop">delivery</span>: <span class="code-keyword">true</span>
-                    </div>
-                    <div class="hero-code-line">
-                        <span class="code-num">6</span>
-                        });
-                    </div>
-                    <div class="hero-code-line">
-                        <span class="code-num">7</span>
-                    </div>
-                    <div class="hero-code-line">
-                        <span class="code-num">8</span>
-                        <span class="code-var">raven</span>.<span class="code-func">launch</span>();<span class="cursor-blink">|</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-badge-float hero-badge-1">
-                <div class="badge-icon-wrap">
-                    <i data-lucide="code-2"></i>
-                </div>
-                <div class="badge-content">
-                    <span class="badge-title">Clean Code</span>
-                    <span class="badge-desc">Código limpo</span>
-                </div>
-            </div>
-
-            <div class="hero-badge-float hero-badge-2">
-                <div class="badge-icon-wrap badge-icon-purple">
-                    <i data-lucide="rocket"></i>
-                </div>
-                <div class="badge-content">
-                    <span class="badge-title">Performance</span>
-                    <span class="badge-desc">Alta velocidade</span>
-                </div>
-            </div>
-
-            <div class="hero-badge-float hero-badge-3">
-                <div class="badge-icon-wrap badge-icon-green">
-                    <i data-lucide="shield-check"></i>
-                </div>
-                <div class="badge-content">
-                    <span class="badge-title">Segurança</span>
-                    <span class="badge-desc">100% protegido</span>
-                </div>
-            </div>
-        </div>
+<div class="hero-wing">
+    <div class="wing-glow"></div>
+    <svg class="wing-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="wing-line" d="M200,200 C220,120 280,60 340,80 C370,92 390,130 380,170 C370,210 330,240 280,260 C250,270 220,275 200,280 C180,285 160,280 140,270 C100,250 70,220 60,180 C50,140 60,100 100,75 C140,50 180,50 200,200Z" />
+        <path class="wing-line-2" d="M200,200 C220,150 260,110 300,100 C330,95 350,110 355,140 C360,170 340,200 300,225 C270,245 230,255 200,260" />
+        <path class="wing-line-3" d="M200,200 C180,230 150,270 110,300 C80,320 50,330 40,310 C30,290 40,260 70,240 C100,220 150,205 200,200" />
+    </svg>
+</div>
     </div>
 </section>
 
