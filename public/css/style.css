@@ -94,21 +94,7 @@ body {
     display: flex;
     align-items: center;
     padding: 120px 5% 80px;
-    background: radial-gradient(circle at 75%, rgba(1, 19, 97, 0.616), transparent 35%),
-                radial-gradient(circle at 99%, rgb(88, 158, 250), transparent 40%),
-                radial-gradient(circle at 80%, rgba(2, 2, 58, 0.575), transparent 60%),
-                linear-gradient(135deg, #020024 0%, #040a2e 35%, #0a1f44 100%);
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 140%;
-    height: 140%;
-    top: -20%;
-    left: -20%;
-    background: radial-gradient(circle, rgba(255,255,255,0.04), transparent 60%);
-    filter: blur(60px);
+    background: linear-gradient(170deg, #020024 0%, #040a2e 35%, #0a1f44 100%);
 }
 
 .hero::after {
@@ -116,14 +102,103 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+    background: linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.5));
     top: 0;
     left: 0;
     pointer-events: none;
+    z-index: 1;
 }
 
-.hero-particles {
-    display: none;
+.hero-mesh {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    animation: blobFloat 12s ease-in-out infinite;
+}
+
+.blob-1 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(91, 108, 255, 0.6), rgba(1, 19, 97, 0.8));
+    top: -10%;
+    left: -5%;
+    animation-duration: 14s;
+}
+
+.blob-2 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(168, 212, 238, 0.5), rgba(88, 158, 250, 0.6));
+    top: 20%;
+    right: -10%;
+    animation-duration: 18s;
+    animation-delay: -3s;
+}
+
+.blob-3 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(91, 108, 255, 0.4), transparent);
+    bottom: -5%;
+    left: 30%;
+    animation-duration: 16s;
+    animation-delay: -6s;
+}
+
+.blob-4 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(168, 212, 238, 0.3), rgba(91, 108, 255, 0.4));
+    top: 50%;
+    left: 50%;
+    animation-duration: 20s;
+    animation-delay: -9s;
+}
+
+.blob-5 {
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(1, 19, 97, 0.6), rgba(91, 108, 255, 0.3));
+    bottom: -15%;
+    right: -5%;
+    animation-duration: 15s;
+    animation-delay: -2s;
+}
+
+@keyframes blobFloat {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(30px, -40px) scale(1.05);
+    }
+    50% {
+        transform: translate(-20px, 20px) scale(0.95);
+    }
+    75% {
+        transform: translate(15px, 35px) scale(1.02);
+    }
+}
+
+.hero-mouse-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(91, 108, 255, 0.06), transparent 60%);
+    pointer-events: none;
+    z-index: 1;
+    transform: translate(-9999px, -9999px);
+    transition: transform 0.15s ease-out;
 }
 
 .hero-container {
@@ -245,77 +320,6 @@ body {
 .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.08);
     border-color: #a8d4ee;
-}
-
-/* ===== WING MOTIF (assinatura) ===== */
-.hero-wing {
-    position: relative;
-    width: 550px;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.wing-orbit {
-    width: 350px;
-    height: 350px;
-    position: relative;
-    animation: orbitRotate 20s linear infinite;
-}
-
-.wing-circle {
-    width: 100%;
-    height: 100%;
-    border: 1.5px solid rgba(91, 108, 255, 0.2);
-    border-radius: 50%;
-    position: relative;
-}
-
-.wing-circle::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: 50%;
-    width: 6px;
-    height: 6px;
-    background: #5b6cff;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 0 15px rgba(91, 108, 255, 0.5);
-}
-
-.wing-circle::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -3px;
-    width: 6px;
-    height: 6px;
-    background: #5b6cff;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    box-shadow: 0 0 15px rgba(91, 108, 255, 0.5);
-}
-
-@keyframes orbitRotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-.wing-glow {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(91, 108, 255, 0.12), transparent 70%);
-    pointer-events: none;
-    animation: glowPulse 6s ease-in-out infinite;
-}
-
-@keyframes glowPulse {
-    0%, 100% { opacity: 0.4; transform: scale(1); }
-    50% { opacity: 0.7; transform: scale(1.03); }
 }
 
 /* ===== STATS ===== */
@@ -1735,13 +1739,7 @@ textarea.input-form {
         justify-content: center;
     }
 
-    .hero-wing {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-    }
-
-    .form-container-pro {
+    }    .form-container-pro {
         flex-direction: column;
         gap: 40px;
     }

@@ -30,7 +30,14 @@
     </nav>
 
    <section class="hero" id="inicio">
-    <div class="hero-particles"></div>
+    <div class="hero-mesh">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="blob blob-5"></div>
+    </div>
+    <div class="hero-mouse-glow"></div>
     <div class="hero-container">
         <div class="hero-text">
             <span class="hero-badge">
@@ -50,12 +57,6 @@
                 </a>
             </div>
         </div>
-<div class="hero-wing">
-    <div class="wing-glow"></div>
-    <div class="wing-orbit">
-        <div class="wing-circle"></div>
-    </div>
-</div>
     </div>
 </section>
 
@@ -522,6 +523,13 @@
     <script src="{{ url('js/carrossel.js') }}"></script>
     <script>
         lucide.createIcons();
+        document.addEventListener('mousemove', (e) => {
+            const glow = document.querySelector('.hero-mouse-glow');
+            if (glow) {
+                glow.style.left = (e.clientX - 300) + 'px';
+                glow.style.top = (e.clientY - 300) + 'px';
+            }
+        });
     </script>
 </body>
 </html>
