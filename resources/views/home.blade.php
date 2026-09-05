@@ -30,13 +30,13 @@
     </nav>
 
    <section class="hero" id="inicio">
-    <div class="hero-mesh">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-        <div class="blob blob-4"></div>
-        <div class="blob blob-5"></div>
+    <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
     </div>
+    <div class="hero-grid"></div>
     <div class="hero-mouse-glow"></div>
     <div class="hero-container">
         <div class="hero-text">
