@@ -260,45 +260,37 @@ body {
 .wing-svg {
     width: 420px;
     height: 420px;
-    opacity: 0.2;
+    opacity: 0.3;
     transition: opacity 0.6s ease;
 }
 
 .hero-wing:hover .wing-svg {
-    opacity: 0.35;
+    opacity: 0.45;
 }
 
-.wing-shape {
+.wing-body {
     fill: #5b6cff;
-    fill-opacity: 0.1;
+    fill-opacity: 0.15;
     stroke: none;
 }
 
-.wing-spine {
+.wing-ridge {
     stroke: #5b6cff;
-    stroke-width: 1.8;
+    stroke-width: 2;
     fill: none;
-    stroke-dasharray: 400;
-    stroke-dashoffset: 400;
-    animation: wingDraw 8s ease-in-out infinite;
+    stroke-dasharray: 350;
+    stroke-dashoffset: 350;
+    animation: wingDraw 7s ease-in-out infinite;
 }
 
 .wing-barb {
     stroke: #5b6cff;
     stroke-width: 1.2;
     fill: none;
-    stroke-dasharray: 300;
-    stroke-dashoffset: 300;
-    animation: wingDraw 8s ease-in-out infinite;
-}
-
-.wing-barbule {
-    stroke: #5b6cff;
-    stroke-width: 0.8;
-    fill: none;
-    stroke-dasharray: 150;
-    stroke-dashoffset: 150;
-    animation: wingDraw 8s ease-in-out infinite;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: wingDraw 7s ease-in-out infinite;
+    animation-delay: 0.5s;
 }
 
 @keyframes wingDraw {
@@ -312,7 +304,7 @@ body {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(91, 108, 255, 0.12), transparent 70%);
+    background: radial-gradient(circle, rgba(91, 108, 255, 0.15), transparent 70%);
     pointer-events: none;
     animation: glowPulse 6s ease-in-out infinite;
 }
